@@ -29,4 +29,7 @@ new 버튼을 클릭하여 wav 파일이 위치한 경로를 지정해주면 해
 json 파일을 생성하여 자동으로 불러와서 실행된다.
 
 <br>
+
 ![UI 스크린샷](https://github.com/limPage/wav_labeling_tool/blob/main/0424.png)
+
+
