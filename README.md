@@ -38,6 +38,7 @@ label 값이 ""이거나 없는 가장 낮은(라벨링이 아직 안된) 순번
 new 버튼을 클릭하여 wav 파일이 위치한 경로를 지정해주면 해당 폴더의 wav파일을 스캔하여 "voiceAiList_날짜" 형식으로
 json 파일을 생성하여 자동으로 불러와서 실행된다.
 <br>
+<br>
 ![UI 스크린샷](https://github.com/limPage/wav_labeling_tool/blob/main/images/0424_new_json.png)
 <br>
 
