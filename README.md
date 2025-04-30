@@ -1,7 +1,7 @@
 # wav_labeling_tool
 
 Python 기반 음성 라벨링 도구입니다.  
-WAV 파일을 기반으로 자동/수동 라벨링을 수행하고, labeling 결과를 JSON으로 저장합니다.
+WAV 파일을 기반으로 수동 라벨링을 수행하고, 라벨링 결과를 JSON으로 저장합니다.
 
 ---
 
