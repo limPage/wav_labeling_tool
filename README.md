@@ -9,7 +9,6 @@ WAV 파일을 기반으로 수동 라벨링을 수행하고, 라벨링 결과를
 
 ### 🔹 0430
 - 파일 선택 후 목록 불러오기 기능 추가됨
-- JSON 선택 시 자동으로 voiceAiList 불러오기 및 재생 기능 개선
 
 ![0430 UI](https://github.com/limPage/wav_labeling_tool/blob/main/images/0430.png)
 
@@ -73,9 +72,9 @@ voice_folder/
 ├── voiceAiList.json
 ├── sub100100a00001.wav
 ├── sub100100a00002.wav
-├── labeling.json         ← (자동 생성됨)
-├── trash.json            ← (제외 항목 저장)
-└── wav_labeling_tool.exe
+├── labeling.json         ← (라벨링 진행시 자동 생성)
+├── trash.json            ← (제외 버튼 클릭시 자동 생성되어 제외 항목 저장 함)
+└── wav_labeling_tool.exe ← (py파일로 생성한 .exe)
 ```
 
 ---
