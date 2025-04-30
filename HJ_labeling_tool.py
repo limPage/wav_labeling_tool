@@ -6,6 +6,7 @@ from tkinter import ttk
 from tkinter import filedialog, messagebox
 import sys
 from datetime import datetime 
+import subprocess
 
 # 전역 상태
 base_path = ""
@@ -349,7 +350,18 @@ def choose_json_file_from_path(file_path):
 
     update_ui()
     play_audio()
-    
+
+def open_folder():
+    if base_path and os.path.exists(base_path):
+        if sys.platform == "win32":
+            os.startfile(base_path)
+        elif sys.platform == "darwin":
+            subprocess.run(["open", base_path])
+        else:
+            subprocess.run(["xdg-open", base_path])
+    else:
+        messagebox.showwarning("경로 없음", "먼저 JSON 파일을 선택하거나 New 버튼으로 경로를 지정해주세요.")
+        
 # ----- UI 구성 -----
 
 # JSON 버튼 아래에 배치
@@ -359,6 +371,7 @@ top_button_frame.pack(pady=10)
 # tk.Button(root, text="📄 JSON 파일 선택", command=choose_json_file, font=("Arial", 12)).pack(pady=10)
 tk.Button(top_button_frame, text="📄 JSON 파일 선택", command=choose_json_file, font=("Arial", 12)).pack(side="left", padx=10)
 tk.Button(top_button_frame, text="New", command=create_voice_list_json, font=("Arial", 12)).pack(side="left", padx=10)
+tk.Button(top_button_frame, text="📂 폴더 열기", command=open_folder, font=("Arial", 12)).pack(side="left", padx=10)
 # audio_label.pack()
 audio_line_frame = tk.Frame(root, bg=bg_color)
 audio_line_frame.pack()
