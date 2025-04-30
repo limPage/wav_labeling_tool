@@ -2,6 +2,7 @@
 
 # 0430
 파일 선택 후 목록 불러오기 기능 추가 함
+![UI 스크린샷](https://github.com/limPage/wav_labeling_tool/blob/main/0430.png)
 
 # 0424
 ### 최초 업로드
@@ -20,6 +21,8 @@ label 값이 ""이거나 없는 가장 낮은(라벨링이 아직 안된) 순번
 
 5.voice 폴더를 다운 받고 voiceAiList.json를 불러오기하여 라벨링 작업을 하면 되고 trash,labeling.json가 생성되었다면
 이 파일 또한 서버 voice 폴더에 내에 덮어쓰기를 해서 다른 사람과 진행 상황을 공유할 수 있다.
+
+![UI 스크린샷](https://github.com/limPage/wav_labeling_tool/blob/main/0424.png)
 
 6.voice 폴더에 비상벨을 통하여 저장된 wav파일 외에 같은 폴더 내에 wav파일을 추가하여 라벨링을 진행하고 싶다면
 기존 voiceAiList.json 안에  {"audio":wav파일명}  예)  ,{"audio":"sub100100a00005.wav"} 이런식으로 [ ]안에 포함 시키거나
